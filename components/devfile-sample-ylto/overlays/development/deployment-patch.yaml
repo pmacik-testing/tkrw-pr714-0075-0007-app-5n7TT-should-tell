@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-ylto
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkrw-pr714-0075-0007-tenant/tkrw-pr714-0075-0007-app/devfile-sample-ylto@sha256:20922be5dd37275ab9f2d6c31264d8fd0c5af41ec0b9725eba5e9ce9aaa59ce4
+        name: my-nodejs
+        resources: {}
+status: {}
